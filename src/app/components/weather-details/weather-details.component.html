@@ -1,0 +1,5 @@
+<div class="weather-container">
+  <span class="weather-label">{{ (weather)?.DateTime | stringToHour }}:00</span>
+  <img [src]='"https://developer.accuweather.com/sites/default/files/" + ((weather)?.WeatherIcon > 9? (weather)?.WeatherIcon.toString(): "0" + (weather)?.WeatherIcon) +"-s.png"' alt="">
+  <span>{{ (weather)?.Temperature.Value + "&#730;" }}</span>
+</div>

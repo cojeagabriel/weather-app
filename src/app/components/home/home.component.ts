@@ -3,7 +3,7 @@ import { LocationService } from './../../services/location.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Location } from '../../types/location';
-import { shareReplay, switchMap } from 'rxjs/operators';
+import { shareReplay, switchMap, map, filter } from 'rxjs/operators';
 import * as moment from 'moment';
 
 @Component({
@@ -14,7 +14,8 @@ import * as moment from 'moment';
 export class HomeComponent implements OnInit {
 
   location$: Observable<any>;
-  weather$: Observable<Object>;
+  weather$: Observable<any>;
+  currentWeather$: Observable<any>
 
   constructor(
     private locationService: LocationService,
@@ -28,8 +29,19 @@ export class HomeComponent implements OnInit {
 
     this.weather$ = this.location$.pipe(
       shareReplay(1),
-      switchMap(location => this.weatherService.getWetherByCityKey(location.Key))
+      switchMap(location => this.weatherService.getWetherByCityKey(location.Key).pipe(
+        map(weatherList => {
+          return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0 )
+        })
+      ))
     )
+
+    this.currentWeather$ = this.weather$.pipe(
+      map(weather => {
+       return weather[0];
+      })
+    )
+
   }
 
   

@@ -7,7 +7,6 @@ import * as moment from 'moment';
 export class StringToDatePipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    console.log(moment(value));
     return moment(value).format('ddd, MMMM D');
   }
 

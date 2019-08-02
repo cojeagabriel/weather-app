@@ -1,10 +1,13 @@
 <div>
   <h1>Hace Frio</h1>
   <h2>{{ (location$ | async)?.LocalizedName + " , " + (location$ | async)?.Country.LocalizedName }}</h2>
-  <h3>{{ ((weather$ | async)[0].DateTime | stringToDate) }}</h3>
-  <h1>{{ (weather$ | async)[0].Temperature.Value + "&#730;" }}</h1>
+  <h3>{{ ((currentWeather$ | async)?.DateTime | stringToDate) }}</h3>
+  <div>
+    <img [src]='"https://developer.accuweather.com/sites/default/files/0" + (currentWeather$ | async)?.WeatherIcon +"-s.png"' alt="">
+    <h1>{{ (currentWeather$ | async)?.Temperature.Value + "&#730;" }}</h1>
+  </div>
 </div>
 
-<p *ngFor="let weather of (weather$ | async)">
-  {{ weather.Temperature.Value + "&#730;, ora: " + (weather.DateTime | stringToHour) }}
-</p>
+<div class="weather-list" >
+  <app-weather-details *ngFor="let weather of (weather$ | async)" [weather]="weather"></app-weather-details>
+</div>

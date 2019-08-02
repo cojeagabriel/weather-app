@@ -9,13 +9,17 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StringToDatePipe } from './pipes/string-to-date.pipe';
 import { StringToHourPipe } from './pipes/string-to-hour.pipe';
+import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
+import { IsEvenPipe } from './pipes/is-even.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     StringToDatePipe,
-    StringToHourPipe
+    StringToHourPipe,
+    WeatherDetailsComponent,
+    IsEvenPipe
   ],
   imports: [
     BrowserModule,
