@@ -7,11 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StringToDatePipe } from './pipes/string-to-date.pipe';
+import { StringToHourPipe } from './pipes/string-to-hour.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    StringToDatePipe,
+    StringToHourPipe
   ],
   imports: [
     BrowserModule,

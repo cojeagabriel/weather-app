@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Location } from '../../types/location';
 import { shareReplay, switchMap } from 'rxjs/operators';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-home',
@@ -26,8 +27,11 @@ export class HomeComponent implements OnInit {
     );
 
     this.weather$ = this.location$.pipe(
+      shareReplay(1),
       switchMap(location => this.weatherService.getWetherByCityKey(location.Key))
     )
   }
+
+  
 
 }

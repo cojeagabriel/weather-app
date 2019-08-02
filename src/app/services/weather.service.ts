@@ -13,7 +13,6 @@ export class WeatherService {
   ) { }
 
   getWetherByCityKey(cityKey: string): Observable<Object> {
-    console.log(cityKey);
     // return (this.http.get(`${environment.api}/locations/v1/cities/search?apikey=${environment.apiKey}&q=${city}`) as Observable<Object>).pipe(
     return (this.http.get('../../assets/data/weather-12h.json') as Observable<Object>);
   }

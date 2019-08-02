@@ -1,5 +1,10 @@
-{{ (location$ | async)?.LocalizedName + " , " + (location$ | async)?.Country.LocalizedName }}
+<div>
+  <h1>Hace Frio</h1>
+  <h2>{{ (location$ | async)?.LocalizedName + " , " + (location$ | async)?.Country.LocalizedName }}</h2>
+  <h3>{{ ((weather$ | async)[0].DateTime | stringToDate) }}</h3>
+  <h1>{{ (weather$ | async)[0].Temperature.Value + "&#730;" }}</h1>
+</div>
 
-<span *ngFor="let weather of (weather$ | async)">
-  {{ weather.Temperature.Value }}
-</span>
+<p *ngFor="let weather of (weather$ | async)">
+  {{ weather.Temperature.Value + "&#730;, ora: " + (weather.DateTime | stringToHour) }}
+</p>
