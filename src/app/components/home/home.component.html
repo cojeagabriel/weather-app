@@ -1,5 +1,18 @@
 <div>
   <h1>Hace Frio</h1>
+  <!-- <h1>{{ test$ | async }}</h1> -->
+  <!-- <h1>{{ (locationTest$ | async)?.LocalizedName }}</h1> -->
+
+  <mat-form-field class="example-full-width">
+    <input type="text" placeholder="City" matInput [formControl]="city"
+      [matAutocomplete]="auto">
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options | async" [value]="option.LocalizedName">
+        {{option.LocalizedName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
   <h2>{{ (location$ | async)?.LocalizedName + " , " + (location$ | async)?.Country.LocalizedName }}</h2>
   <h3>{{ ((currentWeather$ | async)?.DateTime | stringToDate) }}</h3>
   <div>

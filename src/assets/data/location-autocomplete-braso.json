@@ -1,0 +1,91 @@
+[{
+    "Version": 1,
+    "Key": "287345",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Brasov",
+    "Country": {
+      "ID": "RO",
+      "LocalizedName": "Romania"
+    },
+    "AdministrativeArea": {
+      "ID": "BV",
+      "LocalizedName": "Brașov"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "254688",
+    "Type": "City",
+    "Rank": 75,
+    "LocalizedName": "Brasoy",
+    "Country": {
+      "ID": "NO",
+      "LocalizedName": "Norway"
+    },
+    "AdministrativeArea": {
+      "ID": "18",
+      "LocalizedName": "Nordland"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "3487202",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Braso",
+    "Country": {
+      "ID": "ID",
+      "LocalizedName": "Indonesia"
+    },
+    "AdministrativeArea": {
+      "ID": "PA",
+      "LocalizedName": "Papua"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2552038",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasolin",
+    "Country": {
+      "ID": "IT",
+      "LocalizedName": "Italy"
+    },
+    "AdministrativeArea": {
+      "ID": "34",
+      "LocalizedName": "Veneto"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2660760",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasowe",
+    "Country": {
+      "ID": "PL",
+      "LocalizedName": "Poland"
+    },
+    "AdministrativeArea": {
+      "ID": "24",
+      "LocalizedName": "Silesia"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "617749",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasovo",
+    "Country": {
+      "ID": "RU",
+      "LocalizedName": "Russia"
+    },
+    "AdministrativeArea": {
+      "ID": "BRY",
+      "LocalizedName": "Bryansk"
+    }
+  }
+]

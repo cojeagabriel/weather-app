@@ -20,13 +20,20 @@ export class LocationService {
     private http: HttpClient
   ) { }
 
-  getLocation(city:string = "Bucharest"): Observable<Object>{
-    // return (this.http.get(`${environment.api}/locations/v1/cities/search?apikey=${environment.apiKey}&q=${city}`) as Observable<Object>).pipe(
-    return (this.http.get('../../assets/data/location.json') as Observable<Object>).pipe(
+  getLocation(city:string = "bucharest"): Observable<any>{
+    // return (this.http.get(`${environment.api}/locations/v1/cities/search?apikey=${environment.apiKey}&q=${city}`) as Observable<any>).pipe(
+    return (this.http.get(`../../assets/data/location-${city.toLowerCase()}.json`) as Observable<any>).pipe(
       map(location => {
         return location[0];
       })
     );
+  }
+
+  getAutocompleteLocations(str: string): Observable<any>{
+    if(str.length)
+      return (this.http.get(`../../assets/data/location-autocomplete-${str.toLowerCase()}.json`) as Observable<any>);
+    else
+      return (this.http.get('../../assets/data/location.json') as Observable<any>);
   }
 
   // getLocation(city:string = "Bucharest"): Observable<Location>{

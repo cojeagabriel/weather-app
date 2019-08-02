@@ -1,0 +1,1690 @@
+[{
+    "Version": 1,
+    "Key": "43348",
+    "Type": "City",
+    "Rank": 20,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "DF",
+      "LocalizedName": "Distrito Federal",
+      "EnglishName": "Distrito Federal",
+      "Level": 1,
+      "LocalizedType": "Federal District",
+      "EnglishType": "Federal District",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -15.794,
+      "Longitude": -47.888,
+      "Elevation": {
+        "Metric": {
+          "Value": 1066,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 3499,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Brasília",
+        "EnglishName": "Brasília"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Brasília",
+        "EnglishName": "Brasília"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2726299",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "AL",
+      "LocalizedName": "Alagoas",
+      "EnglishName": "Alagoas",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Maceio",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -9.754,
+      "Longitude": -36.648,
+      "Elevation": {
+        "Metric": {
+          "Value": 302,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 990,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "31915",
+      "LocalizedName": "Arapiraca",
+      "EnglishName": "Arapiraca"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Arapiraca",
+        "EnglishName": "Arapiraca"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Arapiraca",
+        "EnglishName": "Arapiraca"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2726514",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "BA",
+      "LocalizedName": "Bahia",
+      "EnglishName": "Bahia",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Bahia",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -12.272,
+      "Longitude": -38.947,
+      "Elevation": {
+        "Metric": {
+          "Value": 172,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 564,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "32041",
+      "LocalizedName": "Feira de Santana",
+      "EnglishName": "Feira de Santana"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Feira de Santana",
+        "EnglishName": "Feira de Santana"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Feira de Santana",
+        "EnglishName": "Feira de Santana"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2732267",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "PR",
+      "LocalizedName": "Paraná",
+      "EnglishName": "Paraná",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -24.935,
+      "Longitude": -53.424,
+      "Elevation": {
+        "Metric": {
+          "Value": 748,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 2453,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "34730",
+      "LocalizedName": "Cascavel",
+      "EnglishName": "Cascavel"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Cascavel",
+        "EnglishName": "Cascavel"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Cascavel",
+        "EnglishName": "Cascavel"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2723734",
+    "Type": "City",
+    "Rank": 75,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "PA",
+      "LocalizedName": "Pará",
+      "EnglishName": "Pará",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Belem",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -1.276,
+      "Longitude": -48.484,
+      "Elevation": {
+        "Metric": {
+          "Value": 1,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 3,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "1637285",
+      "LocalizedName": "Outeiro",
+      "EnglishName": "Outeiro"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Belém",
+        "EnglishName": "Belém"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Outeiro",
+        "EnglishName": "Outeiro"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2723647",
+    "Type": "City",
+    "Rank": 75,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "PA",
+      "LocalizedName": "Pará",
+      "EnglishName": "Pará",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Santarem",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -3.196,
+      "Longitude": -52.215,
+      "Elevation": {
+        "Metric": {
+          "Value": 82,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 268,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "34588",
+      "LocalizedName": "Altamira",
+      "EnglishName": "Altamira"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Altamira",
+        "EnglishName": "Altamira"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Altamira",
+        "EnglishName": "Altamira"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2732549",
+    "Type": "City",
+    "Rank": 75,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "PR",
+      "LocalizedName": "Paraná",
+      "EnglishName": "Paraná",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -23.321,
+      "Longitude": -51.138,
+      "Elevation": {
+        "Metric": {
+          "Value": 530,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 1738,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "44945",
+      "LocalizedName": "Londrina",
+      "EnglishName": "Londrina"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Londrina",
+        "EnglishName": "Londrina"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Londrina",
+        "EnglishName": "Londrina"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2734080",
+    "Type": "City",
+    "Rank": 75,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SC",
+      "LocalizedName": "Santa Catarina",
+      "EnglishName": "Santa Catarina",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -26.233,
+      "Longitude": -49.349,
+      "Elevation": {
+        "Metric": {
+          "Value": 924,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 3030,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "41337",
+      "LocalizedName": "São Bento do Sul",
+      "EnglishName": "São Bento do Sul"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "São Bento do Sul",
+        "EnglishName": "São Bento do Sul"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "São Bento do Sul",
+        "EnglishName": "São Bento do Sul"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2733173",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SC",
+      "LocalizedName": "Santa Catarina",
+      "EnglishName": "Santa Catarina",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -28.598,
+      "Longitude": -49.32,
+      "Elevation": {
+        "Metric": {
+          "Value": 50,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 164,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "2308787",
+      "LocalizedName": "Cocal do Sul",
+      "EnglishName": "Cocal do Sul"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Cocal do Sul",
+        "EnglishName": "Cocal do Sul"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Cocal do Sul",
+        "EnglishName": "Cocal do Sul"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2733231",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SC",
+      "LocalizedName": "Santa Catarina",
+      "EnglishName": "Santa Catarina",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -28.675,
+      "Longitude": -49.338,
+      "Elevation": {
+        "Metric": {
+          "Value": 53,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 173,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "35956",
+      "LocalizedName": "Criciúma",
+      "EnglishName": "Criciúma"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Criciúma",
+        "EnglishName": "Criciúma"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Criciúma",
+        "EnglishName": "Criciúma"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2734145",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SC",
+      "LocalizedName": "Santa Catarina",
+      "EnglishName": "Santa Catarina",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -26.36,
+      "Longitude": -52.849,
+      "Elevation": {
+        "Metric": {
+          "Value": 877,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 2876,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "41260",
+      "LocalizedName": "São Lourenço do Oeste",
+      "EnglishName": "São Lourenço do Oeste"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "São Lourenço do Oeste",
+        "EnglishName": "São Lourenço do Oeste"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "São Lourenço do Oeste",
+        "EnglishName": "São Lourenço do Oeste"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2734536",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "RS",
+      "LocalizedName": "Rio Grande Do Sul",
+      "EnglishName": "Rio Grande Do Sul",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -29.607,
+      "Longitude": -51.948,
+      "Elevation": {
+        "Metric": {
+          "Value": 50,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 164,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "35770",
+      "LocalizedName": "Bom Retiro do Sul",
+      "EnglishName": "Bom Retiro do Sul"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Bom Retiro do Sul",
+        "EnglishName": "Bom Retiro do Sul"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Bom Retiro do Sul",
+        "EnglishName": "Bom Retiro do Sul"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2309980",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "RS",
+      "LocalizedName": "Rio Grande Do Sul",
+      "EnglishName": "Rio Grande Do Sul",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -30.198,
+      "Longitude": -51.005,
+      "Elevation": {
+        "Metric": {
+          "Value": 143,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 469,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Viamão",
+        "EnglishName": "Viamão"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Passo da Areia",
+        "EnglishName": "Passo da Areia"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2735792",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "RS",
+      "LocalizedName": "Rio Grande Do Sul",
+      "EnglishName": "Rio Grande Do Sul",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -30.882,
+      "Longitude": -55.501,
+      "Elevation": {
+        "Metric": {
+          "Value": 172,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 564,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "2309710",
+      "LocalizedName": "Sant'ana do Livramento",
+      "EnglishName": "Sant'ana do Livramento"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Sant'ana do Livramento",
+        "EnglishName": "Sant'ana do Livramento"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Sant'ana do Livramento",
+        "EnglishName": "Sant'ana do Livramento"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2735244",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "RS",
+      "LocalizedName": "Rio Grande Do Sul",
+      "EnglishName": "Rio Grande Do Sul",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -29.601,
+      "Longitude": -51.163,
+      "Elevation": {
+        "Metric": {
+          "Value": 140,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 459,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "35894",
+      "LocalizedName": "Ivoti",
+      "EnglishName": "Ivoti"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Ivoti",
+        "EnglishName": "Ivoti"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Ivoti",
+        "EnglishName": "Ivoti"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2725605",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "PB",
+      "LocalizedName": "Paraíba",
+      "EnglishName": "Paraíba",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Fortaleza",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -7.128,
+      "Longitude": -34.934,
+      "Elevation": {
+        "Metric": {
+          "Value": 14,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 45,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "34632",
+      "LocalizedName": "Bayeux",
+      "EnglishName": "Bayeux"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Bayeux",
+        "EnglishName": "Bayeux"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Bayeux",
+        "EnglishName": "Bayeux"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2732786",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "PR",
+      "LocalizedName": "Paraná",
+      "EnglishName": "Paraná",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -26.219,
+      "Longitude": -52.67,
+      "Elevation": {
+        "Metric": {
+          "Value": 754,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 2473,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "40179",
+      "LocalizedName": "Pato Branco",
+      "EnglishName": "Pato Branco"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Pato Branco",
+        "EnglishName": "Pato Branco"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Pato Branco",
+        "EnglishName": "Pato Branco"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2725745",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "PB",
+      "LocalizedName": "Paraíba",
+      "EnglishName": "Paraíba",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Fortaleza",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -7.024,
+      "Longitude": -37.273,
+      "Elevation": {
+        "Metric": {
+          "Value": 273,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 895,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "34633",
+      "LocalizedName": "Patos",
+      "EnglishName": "Patos"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Patos",
+        "EnglishName": "Patos"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Patos",
+        "EnglishName": "Patos"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2303297",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SE",
+      "LocalizedName": "Sergipe",
+      "EnglishName": "Sergipe",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Maceio",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -10.897,
+      "Longitude": -37.551,
+      "Elevation": {
+        "Metric": {
+          "Value": 158,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 518,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Lagarto",
+        "EnglishName": "Lagarto"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Lagarto",
+        "EnglishName": "Lagarto"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2727886",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "MG",
+      "LocalizedName": "Minas Gerais",
+      "EnglishName": "Minas Gerais",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -18.597,
+      "Longitude": -46.534,
+      "Elevation": {
+        "Metric": {
+          "Value": 829,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 2719,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "33795",
+      "LocalizedName": "Patos de Minas",
+      "EnglishName": "Patos de Minas"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Patos de Minas",
+        "EnglishName": "Patos de Minas"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Patos de Minas",
+        "EnglishName": "Patos de Minas"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2725415",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "CE",
+      "LocalizedName": "Ceará",
+      "EnglishName": "Ceará",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Fortaleza",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -3.312,
+      "Longitude": -40.562,
+      "Elevation": {
+        "Metric": {
+          "Value": 146,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 478,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "38017",
+      "LocalizedName": "Uruoca",
+      "EnglishName": "Uruoca"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Uruoca",
+        "EnglishName": "Uruoca"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Uruoca",
+        "EnglishName": "Uruoca"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2725215",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "CE",
+      "LocalizedName": "Ceará",
+      "EnglishName": "Ceará",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Fortaleza",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -6.22,
+      "Longitude": -40.694,
+      "Elevation": {
+        "Metric": {
+          "Value": 583,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 1912,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "38112",
+      "LocalizedName": "Parambu",
+      "EnglishName": "Parambu"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Parambu",
+        "EnglishName": "Parambu"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Parambu",
+        "EnglishName": "Parambu"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2735059",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "RS",
+      "LocalizedName": "Rio Grande Do Sul",
+      "EnglishName": "Rio Grande Do Sul",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Sao_Paulo",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -29.243,
+      "Longitude": -51.526,
+      "Elevation": {
+        "Metric": {
+          "Value": 618,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 2027,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "40906",
+      "LocalizedName": "Garibaldi",
+      "EnglishName": "Garibaldi"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Garibaldi",
+        "EnglishName": "Garibaldi"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Garibaldi",
+        "EnglishName": "Garibaldi"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  },
+  {
+    "Version": 1,
+    "Key": "2726493",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Brasília",
+    "EnglishName": "Brasília",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil",
+      "EnglishName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SE",
+      "LocalizedName": "Sergipe",
+      "EnglishName": "Sergipe",
+      "Level": 1,
+      "LocalizedType": "State",
+      "EnglishType": "State",
+      "CountryID": "BR"
+    },
+    "TimeZone": {
+      "Code": "BRT",
+      "Name": "America/Maceio",
+      "GmtOffset": -3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -10.213,
+      "Longitude": -37.415,
+      "Elevation": {
+        "Metric": {
+          "Value": 261,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 856,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "ParentCity": {
+      "Key": "45910",
+      "LocalizedName": "Nossa Senhora da Glória",
+      "EnglishName": "Nossa Senhora da Glória"
+    },
+    "SupplementalAdminAreas": [{
+        "Level": 2,
+        "LocalizedName": "Nossa Senhora da Glória",
+        "EnglishName": "Nossa Senhora da Glória"
+      },
+      {
+        "Level": 3,
+        "LocalizedName": "Nossa Senhora da Glória",
+        "EnglishName": "Nossa Senhora da Glória"
+      }
+    ],
+    "DataSets": [
+      "Alerts"
+    ]
+  }
+]
