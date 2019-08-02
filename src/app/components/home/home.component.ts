@@ -1,8 +1,9 @@
+import { WeatherService } from './../../services/weather.service';
 import { LocationService } from './../../services/location.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Location } from '../../types/location';
-import { shareReplay } from 'rxjs/operators';
+import { shareReplay, switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -11,16 +12,22 @@ import { shareReplay } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
 
-  location$: Observable<Object>
+  location$: Observable<any>;
+  weather$: Observable<Object>;
 
   constructor(
-    private locationService: LocationService
+    private locationService: LocationService,
+    private weatherService: WeatherService
   ) { }
 
   ngOnInit() {
     this.location$ = this.locationService.getLocation().pipe(
       shareReplay(1)
     );
+
+    this.weather$ = this.location$.pipe(
+      switchMap(location => this.weatherService.getWetherByCityKey(location.Key))
+    )
   }
 
 }
