@@ -1,5 +1,11 @@
 <div>
   <h1>Hace Frio</h1>
+  <div class="toggle">
+    <mat-slide-toggle class="example-margin" [(ngModel)]="metricBoolean" (change)="toggleMetric()">
+      &#730;F
+    </mat-slide-toggle>
+  </div>
+  
 
   <mat-form-field class="example-full-width">
     <input type="text" matInput [formControl]="city"
@@ -16,21 +22,21 @@
   
   <div>
     <img *ngIf="(currentWeather$ | async)?.WeatherIcon" [src]='"https://developer.accuweather.com/sites/default/files/" + ((currentWeather$ | async)?.WeatherIcon > 9? (currentWeather$ | async)?.WeatherIcon.toString(): "0" + (currentWeather$ | async)?.WeatherIcon).toString() +"-s.png" || ""' alt="">
-    <h1>{{ (currentWeather$ | async)?.Temperature.Value + "&#730;" }}</h1>
+    <h1>{{ (currentWeather$ | async)?.Temperature.Value | celsiusToFahrenheit:metric }}</h1>
   </div>
 </div>
 
 <mat-tab-group [animationDuration]="'0ms'">
   <mat-tab label="Hourly"> 
     <div class="weather-list">
-      <app-weather-details *ngFor="let weather of (weather$ | async); trackBy: trackByFn" [weather]="weather" [type]="'hour'">
+      <app-weather-details *ngFor="let weather of (weather$ | async); trackBy: trackByFn" [weather]="weather" [type]="'hour'" [metric]="metric">
       </app-weather-details>
     </div> 
   </mat-tab>
   <mat-tab label="Daily">
     <div class="weather-list">
       <app-weather-details *ngFor="let weather of (weatherByDays$ | async)?.DailyForecasts; trackBy: trackByFn"
-        [weather]="weather" [type]="'day'"></app-weather-details>
+        [weather]="weather" [type]="'day'" [metric]="metric"></app-weather-details>
     </div>
   </mat-tab>
 </mat-tab-group>

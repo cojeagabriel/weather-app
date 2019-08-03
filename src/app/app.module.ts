@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatTabsModule } from '@angular/material/tabs';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { WeatherDetailsComponent } from './components/weather-details/weather-de
 import { IsEvenPipe } from './pipes/is-even.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StringToDayPipe } from './pipes/string-to-day.pipe';
+import { CelsiusToFahrenheitPipe } from './pipes/celsius-to-fahrenheit.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { StringToDayPipe } from './pipes/string-to-day.pipe';
     StringToHourPipe,
     WeatherDetailsComponent,
     IsEvenPipe,
-    StringToDayPipe
+    StringToDayPipe,
+    CelsiusToFahrenheitPipe
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { StringToDayPipe } from './pipes/string-to-day.pipe';
     BrowserAnimationsModule,
     MatInputModule,
     MatAutocompleteModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSlideToggleModule
   ],
   providers: [
     LocationService,

@@ -12,8 +12,8 @@ import { StringToDayPipe } from 'src/app/pipes/string-to-day.pipe';
 })
 export class WeatherDetailsComponent implements OnInit {
 
-  //  weather: any;
   @Input() type: string;
+  @Input() metric: string;
 
   weatherInfo: WeatherDetailsInfo = {
     Label: '',
@@ -28,7 +28,6 @@ export class WeatherDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.type);
   }
 
   @Input()
