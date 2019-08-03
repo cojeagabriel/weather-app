@@ -1,26 +1,28 @@
 <div>
   <h1>Hace Frio</h1>
-  <!-- <h1>{{ test$ | async }}</h1> -->
-  <!-- <h1>{{ (locationTest$ | async)?.LocalizedName }}</h1> -->
 
   <mat-form-field class="example-full-width">
-    <input type="text" placeholder="City" matInput [formControl]="city"
+    <input type="text" matInput (blur)="test()" [formControl]="city"
       [matAutocomplete]="auto">
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
       <mat-option *ngFor="let option of options | async" [value]="option.LocalizedName">
-        {{option.LocalizedName}}
+        {{ option.LocalizedName + ', ' + option.Country.LocalizedName}}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
 
   <h2>{{ (location$ | async)?.LocalizedName + " , " + (location$ | async)?.Country.LocalizedName }}</h2>
   <h3>{{ ((currentWeather$ | async)?.DateTime | stringToDate) }}</h3>
+  
   <div>
-    <img [src]='"https://developer.accuweather.com/sites/default/files/0" + (currentWeather$ | async)?.WeatherIcon +"-s.png"' alt="">
+    <img *ngIf="(currentWeather$ | async)?.WeatherIcon" [src]='"https://developer.accuweather.com/sites/default/files/0" + (currentWeather$ | async)?.WeatherIcon +"-s.png" || ""' alt="">
     <h1>{{ (currentWeather$ | async)?.Temperature.Value + "&#730;" }}</h1>
   </div>
 </div>
 
 <div class="weather-list" >
-  <app-weather-details *ngFor="let weather of (weather$ | async)" [weather]="weather"></app-weather-details>
+  <app-weather-details *ngFor="let weather of (weather$ | async); trackBy: trackByFn" [weather]="weather"></app-weather-details>
+</div>
+<div class="weather-list" >
+  <app-weather-details *ngFor="let weather of (weatherByDays$ | async)?.DailyForecasts; trackBy: trackByFn" [weather]="weather"></app-weather-details>
 </div>

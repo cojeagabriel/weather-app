@@ -33,7 +33,7 @@ export class LocationService {
     if(str.length)
       return (this.http.get(`../../assets/data/location-autocomplete-${str.toLowerCase()}.json`) as Observable<any>);
     else
-      return (this.http.get('../../assets/data/location.json') as Observable<any>);
+      return (this.http.get('../../assets/data/location-bucharest.json') as Observable<any>);
   }
 
   // getLocation(city:string = "Bucharest"): Observable<Location>{

@@ -15,6 +15,7 @@ import { StringToHourPipe } from './pipes/string-to-hour.pipe';
 import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 import { IsEvenPipe } from './pipes/is-even.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StringToDayPipe } from './pipes/string-to-day.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     StringToDatePipe,
     StringToHourPipe,
     WeatherDetailsComponent,
-    IsEvenPipe
+    IsEvenPipe,
+    StringToDayPipe
   ],
   imports: [
     BrowserModule,

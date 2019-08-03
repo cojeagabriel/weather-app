@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   location$: Observable<any>;
   weather$: Observable<any>;
+  weatherByDays$: Observable<any>;
   currentWeather$: Observable<any>
 
   city = new FormControl();
@@ -29,6 +30,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.city.setValue('Bucharest');
     this.location$ = this.generateWeather.pipe(
       shareReplay(1),
       startWith('bucharest'),
@@ -36,6 +38,14 @@ export class HomeComponent implements OnInit {
         return this.locationService.getLocation(value.toLowerCase());
       })
     )
+
+    this.weatherByDays$ = this.location$.pipe(
+      shareReplay(1),
+      switchMap(location => {
+        console.log(location.Key);
+        return this.weatherService.getWetherByCityKey({CityKey: location.Key, Type: 'days'});
+      })
+    );
 
     this.weather$ = this.location$.pipe(
       shareReplay(1),
@@ -56,21 +66,37 @@ export class HomeComponent implements OnInit {
       })
     );
 
+    this.city.valueChanges.pipe(
+      switchMap(value => {
+        console.log("here");
+        if(!value.lenth)
+          return 'Bucharest'
+      })
+    )
+
     this.options = this.city.valueChanges.pipe(
       shareReplay(1),
       startWith(''),
       switchMap(value => {
         return this.locationService.getAutocompleteLocations(value).pipe(
-          map(locations => {
+          tap(locations => {
             this.generateWeather.next(locations[0].LocalizedName);
-            return locations.map(location => {
-              return { Key: location.Key, LocalizedName: location.LocalizedName }
-            })
           })
         )
       })
     ) as Observable<any>;
     
+  }
+
+  test(){
+    if(!this.city.value.length){
+      this.city.setValue('Beijing');
+      this.generateWeather.next('Beijing');
+    }
+  }
+
+  trackByFn(index){
+    return index;
   }
 
 }
