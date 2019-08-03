@@ -3,7 +3,7 @@ import { LocationService } from './../../services/location.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { Location } from '../../types/location';
-import { shareReplay, switchMap, map, filter, startWith, take, tap } from 'rxjs/operators';
+import { shareReplay, switchMap, map, filter, startWith, take, tap, last, withLatestFrom } from 'rxjs/operators';
 import * as moment from 'moment';
 import { FormControl } from '@angular/forms';
 
@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   location$: Observable<any>;
   weather$: Observable<any>;
   weatherByDays$: Observable<any>;
+
+  getCurrentWeather$: Subject<any> = new Subject<null>();
   currentWeather$: Observable<any>
 
   city = new FormControl();
@@ -30,69 +32,66 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.city.setValue('Bucharest');
+
     this.location$ = this.generateWeather.pipe(
       shareReplay(1),
       startWith('bucharest'),
-      switchMap(value => {
-        return this.locationService.getLocation(value.toLowerCase());
-      })
+      switchMap(value => this.locationService.getLocation(value))
     )
-
-    this.weatherByDays$ = this.location$.pipe(
-      shareReplay(1),
-      switchMap(location => {
-        console.log(location.Key);
-        return this.weatherService.getWetherByCityKey({CityKey: location.Key, Type: 'days'});
-      })
-    );
 
     this.weather$ = this.location$.pipe(
       shareReplay(1),
-      switchMap(location => {
-        console.log(location.Key);
-        return this.weatherService.getWetherByCityKey({CityKey: location.Key}).pipe(
-          map(weatherList => {
-            return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0 );
-          })
-        );
-      })
+      switchMap(location => this.weatherService.getWether({ CityKey: location.Key }).pipe(
+        tap(weatherList => {
+          this.getCurrentWeather$.next(weatherList[0]);
+        })
+      ))
     );
 
-    this.currentWeather$ = this.weather$.pipe(
+    this.weatherByDays$ = this.location$.pipe(
       shareReplay(1),
-      map(weather => {
-       return weather[0];
-      })
+      switchMap(location => this.weatherService.getWether({CityKey: location.Key, Type: 'days'}))
     );
 
-    this.city.valueChanges.pipe(
-      switchMap(value => {
-        console.log("here");
-        if(!value.lenth)
-          return 'Bucharest'
-      })
-    )
+    this.currentWeather$ = this.getCurrentWeather$.pipe(
+      shareReplay(1)
+    );
 
     this.options = this.city.valueChanges.pipe(
-      shareReplay(1),
-      startWith(''),
-      switchMap(value => {
-        return this.locationService.getAutocompleteLocations(value).pipe(
-          tap(locations => {
-            this.generateWeather.next(locations[0].LocalizedName);
-          })
-        )
-      })
-    ) as Observable<any>;
+      switchMap(value => this.locationService.getAutocompleteLocations(value))
+    );
+    
+    // this.currentWeather$ = this.getCurrentWeather$.pipe(
+    //   shareReplay(1),
+    //   map(weather => {
+    //     console.log(weather);
+    //    return weather;
+    //   })
+    // );
+
+    // this.currentWeather$ = this.weather$.pipe(
+    //   shareReplay(1),
+    //   map(weather => {
+    //    return weather[0];
+    //   })
+    // );
+
+    // this.options = this.city.valueChanges.pipe(
+    //   shareReplay(1),
+    //   startWith(''),
+    //   switchMap(value => {
+    //     return this.locationService.getAutocompleteLocations(value).pipe(
+    //       tap(locations => {
+    //         this.generateWeather.next(locations[0].LocalizedName);
+    //       })
+    //     )
+    //   })
+    // ) as Observable<any>;
     
   }
 
-  test(){
-    if(!this.city.value.length){
-      this.city.setValue('Beijing');
-      this.generateWeather.next('Beijing');
-    }
+  selectOption(value: string){
+    this.generateWeather.next(value);
   }
 
   trackByFn(index){

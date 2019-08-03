@@ -2,9 +2,9 @@
   <h1>Hace Frio</h1>
 
   <mat-form-field class="example-full-width">
-    <input type="text" matInput (blur)="test()" [formControl]="city"
+    <input type="text" matInput [formControl]="city"
       [matAutocomplete]="auto">
-    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="selectOption($event.option.value)">
       <mat-option *ngFor="let option of options | async" [value]="option.LocalizedName">
         {{ option.LocalizedName + ', ' + option.Country.LocalizedName}}
       </mat-option>
@@ -15,14 +15,24 @@
   <h3>{{ ((currentWeather$ | async)?.DateTime | stringToDate) }}</h3>
   
   <div>
-    <img *ngIf="(currentWeather$ | async)?.WeatherIcon" [src]='"https://developer.accuweather.com/sites/default/files/0" + (currentWeather$ | async)?.WeatherIcon +"-s.png" || ""' alt="">
+    <img *ngIf="(currentWeather$ | async)?.WeatherIcon" [src]='"https://developer.accuweather.com/sites/default/files/" + ((currentWeather$ | async)?.WeatherIcon > 9? (currentWeather$ | async)?.WeatherIcon.toString(): "0" + (currentWeather$ | async)?.WeatherIcon).toString() +"-s.png" || ""' alt="">
     <h1>{{ (currentWeather$ | async)?.Temperature.Value + "&#730;" }}</h1>
   </div>
 </div>
 
-<div class="weather-list" >
-  <app-weather-details *ngFor="let weather of (weather$ | async); trackBy: trackByFn" [weather]="weather"></app-weather-details>
-</div>
-<div class="weather-list" >
-  <app-weather-details *ngFor="let weather of (weatherByDays$ | async)?.DailyForecasts; trackBy: trackByFn" [weather]="weather"></app-weather-details>
-</div>
+<mat-tab-group [animationDuration]="'0ms'">
+  <mat-tab label="Hourly"> 
+    <div class="weather-list">
+      <app-weather-details *ngFor="let weather of (weather$ | async); trackBy: trackByFn" [weather]="weather" [type]="'hour'">
+      </app-weather-details>
+    </div> 
+  </mat-tab>
+  <mat-tab label="Daily">
+    <div class="weather-list">
+      <app-weather-details *ngFor="let weather of (weatherByDays$ | async)?.DailyForecasts; trackBy: trackByFn"
+        [weather]="weather" [type]="'day'"></app-weather-details>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+

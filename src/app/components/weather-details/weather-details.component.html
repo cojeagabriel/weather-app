@@ -1,4 +1,15 @@
-<div *ngIf="weather.DateTime != undefined" class="weather-container">
+<!-- <div *ngIf="weather.DateTime != undefined" class="weather-container">
+  <span class="weather-label">{{ weatherInfo.Label }}</span>
+  <img [src]='(weatherInfo)?.IconUrl' alt="">
+  <span>{{ (weather)?.Temperature.Value + "&#730;" }}</span>
+</div>
+<div *ngIf="weather.Date != undefined" class="weather-container">
+  <span class="weather-label">{{ (weatherInfo)?.Label }}</span>
+  <img [src]='weatherInfo.IconUrl' alt="">
+  <span>{{ (weather)?.Temperature.Maximum.Value + "&#730;" }}</span>
+  <span>{{ (weather)?.Temperature.Minimum.Value + "&#730;" }}</span>
+</div> -->
+<!-- <div *ngIf="weather.DateTime != undefined" class="weather-container">
   <span class="weather-label">{{ (weather)?.DateTime | stringToHour }}:00</span>
   <img [src]='"https://developer.accuweather.com/sites/default/files/" + ((weather)?.WeatherIcon > 9? (weather)?.WeatherIcon.toString(): "0" + (weather)?.WeatherIcon) +"-s.png"' alt="">
   <span>{{ (weather)?.Temperature.Value + "&#730;" }}</span>
@@ -10,4 +21,21 @@
     alt="">
   <span>{{ (weather)?.Temperature.Maximum.Value + "&#730;" }}</span>
   <span>{{ (weather)?.Temperature.Minimum.Value + "&#730;" }}</span>
+</div> -->
+
+<div class="weather-container">
+  <span class="weather-label">{{ weatherInfo.Label }}</span>
+  
+  <div *ngIf="type == 'hour'" class="weather-info">
+      <img [src]='weatherInfo.IconUrls' alt="">
+      <span>{{ weatherInfo.Temperature }}</span>
+  </div>
+
+  <div *ngIf="type == 'day'" class="weather-info" [ngClass]="{'weather-info-day': type == 'day'}">
+      <img [src]='weatherInfo.IconUrls.Day' alt="">
+      <img [src]='weatherInfo.IconUrls.Night' alt="">
+      <span>{{ weatherInfo.Temperature.Maximum }}</span>
+      <span>{{ weatherInfo.Temperature.Minimum }}</span>
+  </div>
+
 </div>
