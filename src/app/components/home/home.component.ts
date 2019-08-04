@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     this.weather$ = this.location$.pipe(
       shareReplay(1),
-      switchMap(location => this.weatherService.getWether({ CityKey: location.Key, Type: 'hourly' }).pipe(
+      switchMap(location => this.weatherService.getWeather({ CityKey: location.Key, Type: 'hourly' }).pipe(
         tap(weatherList => {
           this.getCurrentWeather$.next(weatherList[0]);
         })
@@ -57,12 +57,12 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     this.weatherByDays$ = this.location$.pipe(
       shareReplay(1),
-      switchMap(location => this.weatherService.getWether({CityKey: location.Key, Type: 'daily'}))
+      switchMap(location => this.weatherService.getWeather({CityKey: location.Key, Type: 'daily'}))
     );
 
-    this.currentWeather$ = this.getCurrentWeather$.pipe(
-      shareReplay(1)
-    );
+    // this.currentWeather$ = this.getCurrentWeather$.pipe(
+    //   shareReplay(1)
+    // );
 
     this.options = this.city.valueChanges.pipe(
       switchMap(value => this.locationService.getAutocompleteLocations(value))
@@ -76,12 +76,19 @@ export class HomeComponent implements OnInit, OnDestroy {
     //   })
     // );
 
-    // this.currentWeather$ = this.weather$.pipe(
-    //   shareReplay(1),
-    //   map(weather => {
-    //    return weather[0];
-    //   })
-    // );
+    this.currentWeather$ = this.weather$.pipe(
+      shareReplay(1),
+      map(weather => {
+       return weather[0];
+      })
+    );
+
+    this.currentWeather$ = this.location$.pipe(
+      shareReplay(1),
+      switchMap(location => {
+        return this.weatherService.getCurrentWeather({ CityKey: location.Key });
+      })
+    );
 
     // this.options = this.city.valueChanges.pipe(
     //   shareReplay(1),

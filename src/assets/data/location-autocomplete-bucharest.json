@@ -1,0 +1,15 @@
+[{
+  "Version": 1,
+  "Key": "287430",
+  "Type": "City",
+  "Rank": 20,
+  "LocalizedName": "Bucharest",
+  "Country": {
+    "ID": "RO",
+    "LocalizedName": "Romania"
+  },
+  "AdministrativeArea": {
+    "ID": "B",
+    "LocalizedName": "Bucharest"
+  }
+}]

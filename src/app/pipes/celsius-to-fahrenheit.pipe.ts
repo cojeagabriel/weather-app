@@ -9,15 +9,15 @@ export class CelsiusToFahrenheitPipe implements PipeTransform {
     // value = Math.round(value);
     switch (metric) {
       case 'C':
-        return Math.round(value) + "˚C";
+        return Math.round(value) + "˚";
         break;
       
       case 'F':
-        return Math.round((value * 9 / 5) + 32) + "˚F";
+        return Math.round((value * 9 / 5) + 32) + "˚";
         break;
 
       default:
-        return Math.round(value) + "˚C";
+        return Math.round(value) + "˚";
         break;
     }
   }

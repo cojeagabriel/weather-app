@@ -1,4 +1,4 @@
 export interface WeatherFilters {
     CityKey: string,
-    Type: string
+    Type?: string
 }

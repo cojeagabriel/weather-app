@@ -7,6 +7,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,7 +44,9 @@ import { CelsiusToFahrenheitPipe } from './pipes/celsius-to-fahrenheit.pipe';
     MatInputModule,
     MatAutocompleteModule,
     MatTabsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [
     LocationService,

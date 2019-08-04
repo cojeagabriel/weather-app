@@ -1,0 +1,151 @@
+[{
+    "Version": 1,
+    "Key": "101924",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Beijing",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "BJ",
+      "LocalizedName": "Beijing"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "178087",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Berlin",
+    "Country": {
+      "ID": "DE",
+      "LocalizedName": "Germany"
+    },
+    "AdministrativeArea": {
+      "ID": "BE",
+      "LocalizedName": "Berlin"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "204108",
+    "Type": "City",
+    "Rank": 11,
+    "LocalizedName": "Bengaluru",
+    "Country": {
+      "ID": "IN",
+      "LocalizedName": "India"
+    },
+    "AdministrativeArea": {
+      "ID": "KA",
+      "LocalizedName": "Karnataka"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "56913",
+    "Type": "City",
+    "Rank": 13,
+    "LocalizedName": "Bengbu",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "AH",
+      "LocalizedName": "Anhui"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "298198",
+    "Type": "City",
+    "Rank": 20,
+    "LocalizedName": "Belgrade",
+    "Country": {
+      "ID": "RS",
+      "LocalizedName": "Serbia"
+    },
+    "AdministrativeArea": {
+      "ID": "00",
+      "LocalizedName": "Belgrade"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "44403",
+    "Type": "City",
+    "Rank": 21,
+    "LocalizedName": "Belo Horizonte",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "MG",
+      "LocalizedName": "Minas Gerais"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "252686",
+    "Type": "City",
+    "Rank": 21,
+    "LocalizedName": "Benin City",
+    "Country": {
+      "ID": "NG",
+      "LocalizedName": "Nigeria"
+    },
+    "AdministrativeArea": {
+      "ID": "ED",
+      "LocalizedName": "Edo"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "58353",
+    "Type": "City",
+    "Rank": 23,
+    "LocalizedName": "Beihai",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "GX",
+      "LocalizedName": "Guangxi"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "102134",
+    "Type": "City",
+    "Rank": 23,
+    "LocalizedName": "Benxi",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "LN",
+      "LocalizedName": "Liaoning"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2332698",
+    "Type": "City",
+    "Rank": 25,
+    "LocalizedName": "Beiliu",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "GX",
+      "LocalizedName": "Guangxi"
+    }
+  }
+]
