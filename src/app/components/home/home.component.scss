@@ -4,6 +4,7 @@ main{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +152,6 @@ main{
   display: flex;
   justify-content: space-around;
   margin-top: 48px;
-//   min-height: 32vh;
 }
 
 .header{
@@ -191,4 +191,135 @@ main{
 
 app-weather-details{
     min-height: 220px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .background{
+        position: fixed;
+    }
+
+    .header,
+    .footer{
+        padding: 12px 24px;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .footer{
+        padding: 0;
+
+        span{
+            font-size: 9px;
+            color: rgba($color: $color-primary, $alpha: 0.64);
+        }
+    }
+
+    .actions{
+        flex-grow: 1;
+    }
+
+    .search{
+        display: flex;
+        flex-grow: 1;
+        margin-right: 16px;
+
+        mat-form-field{
+            flex-grow: 1;
+        }
+    }
+
+    .location-name{
+        // padding-top: 76px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .date{
+        font-size: 11px;
+        margin: 8px 0 32px;
+    }
+
+    .weather-info-field-label{
+        font-size: 9px;
+        margin-bottom: 4px;
+    }
+    
+    .weather-info-field-value{
+        font-size: 12px;
+    }
+
+    .current-weather-container{
+        margin: 0;
+
+        .right-side {
+          min-width: 0;
+          padding-right: 24px;
+        }
+
+        .left-side{
+            padding-right: 24px;
+        }
+    }
+
+    .main-info-container{
+        margin-bottom: 0;
+
+        img{
+            position: initial;
+        }
+    }
+
+    .current-weather-temperature{
+        font-size: 96px;
+        line-height: 96px;
+    }
+
+    .weather-info-text{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .weather-list{
+        margin-top: 24px;
+    }
+
+    app-weather-details {
+      min-height: 152px;
+      flex-grow: 1;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .location-name {
+        padding-top: 76px;
+    }
+
+    .logo{
+        margin-right: 24px;
+    }
+
+    .weather-list{
+        padding-bottom: 76px;
+    }
+}
+
+@media (max-width: 479px) {
+    main {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .current-weather-container {
+        .right-side {
+            display: none;
+        }
+    }
 }
