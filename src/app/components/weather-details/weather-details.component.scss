@@ -118,3 +118,84 @@ img{
 a{
     text-decoration: none;
 }
+
+
+@media (max-width: 767px) {
+    .weather-container{
+        padding: 16px 0;
+    }
+
+    .weather-label{
+        font-size: 12px;
+        font-family: $font-condensed;
+    }
+
+    .temperature{
+        font-size: 18px;
+        padding-left: 4px;
+    }
+
+    img{
+        width: 30px;
+    }
+
+    .weather-temperature-container{
+        flex-direction: column;
+        justify-content: center;
+
+        &:not(.weather-temperature-container-daily){
+            img {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .humidity-container{
+        svg{
+            width: 8px;
+            margin-right: 4px;
+            padding-bottom: 1px;
+        }
+
+        span{
+            font-size: 10px;
+        }
+    }
+
+    .weather-temperature-container-daily{
+    
+        .weather-icons-container{
+            margin-bottom: 16px;
+        }
+
+        .temperature{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .temperature-minimum{
+            font-size: 10px;
+            margin-top: 4px;
+        }
+    }
+
+    .weather-icons-container{
+        width: 30px;
+        height: 30px;
+
+        img{
+            &:first-child{
+                transform: translate(60%, -10%);
+            }
+
+            &:nth-child(2){
+                transform: translate(-60%, 10%);
+            }
+        }
+    }
+}
+
+@media (max-width: 479px) {
+
+}

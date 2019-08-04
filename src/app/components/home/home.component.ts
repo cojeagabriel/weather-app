@@ -1,11 +1,12 @@
 import { WeatherService } from './../../services/weather.service';
 import { LocationService } from './../../services/location.service';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef, ChangeDetectorRef } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { shareReplay, switchMap, map, filter, startWith, take, tap, last, withLatestFrom, first } from 'rxjs/operators';
 import * as moment from 'moment';
 import { FormControl } from '@angular/forms';
 import { untilDestroyed } from 'ngx-take-until-destroy';
+import { MatInput } from '@angular/material'
 
 @Component({
   selector: 'app-home',
@@ -31,12 +32,19 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   lastUpdate$: Observable<string>;
 
+  // @ViewChild("search", { static: false }) searchInput: ElementRef;
+  @ViewChild(MatInput, { static: false }) searchInput: MatInput;
+  searchFocus: boolean = false;
+
   constructor(
     private locationService: LocationService,
-    private weatherService: WeatherService
+    private weatherService: WeatherService,
+    private changeDetector: ChangeDetectorRef
   ) { }
 
   ngOnInit() {
+
+    this.city.setValue('');
 
     this.location$ = this.generateWeather.pipe(
       startWith('bucharest'),
@@ -96,6 +104,28 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   refresh(){
     this.generateWeather.next(this.location);
+  }
+
+  searchClick() {
+    if(this.city.value != ''){
+      this.city.setValue('');
+    }
+    if(this.searchFocus == false){
+      this.changeDetector.detectChanges();
+      setTimeout(() => {
+        this.searchInput.focus();
+      }, 0);
+    }
+  }
+
+  searchBlur(){
+    this.searchFocus = false;
+    console.log("blur", this.searchFocus);
+  }
+
+  searchInputFocus(){
+    this.searchFocus = true;
+    console.log("focus", this.searchFocus);
   }
 
   ngOnDestroy(){

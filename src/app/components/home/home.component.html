@@ -1,23 +1,27 @@
 <main>
   <div class="background">
-    <img src="/assets/images/background3.png" alt="">
+    <img src="/assets/images/background3.jpg" alt="">
   </div>
 
   <div class="header">
-    <span class="logo">HaceFrio</span>
+    <div class="logo">
+      <img src="/assets/images/logo.svg" alt="">
+      <span class="logo-text">HaceFrio</span>
+    </div>
 
     <div class="actions">
       <div class="search">
         <mat-form-field class="example-full-width">
-          <input #search type="text" matInput [formControl]="city" [matAutocomplete]="auto" spellcheck="false">
+          <input #search type="text" matInput [formControl]="city" [matAutocomplete]="auto" spellcheck="false" (blur)="searchBlur()" (focus)="searchInputFocus()">
           <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="selectOption($event.option.value)">
             <mat-option *ngFor="let option of options | async" [value]="option.LocalizedName">
               {{ option.LocalizedName + ', ' + option.Country.LocalizedName}}
             </mat-option>
           </mat-autocomplete>
         </mat-form-field>
-        <button mat-icon-button aria-label="Example icon-button with a heart icon">
-          <mat-icon>search</mat-icon>
+        <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="searchClick()">
+          <mat-icon *ngIf="city.value == ''">search</mat-icon>
+          <mat-icon *ngIf="city.value != ''">close</mat-icon>
         </button>
       </div>
 
