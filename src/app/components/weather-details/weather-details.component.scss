@@ -95,6 +95,11 @@ img{
     }
 }
 
+.weather-temperature-container{
+    display: flex;
+    align-items: center;
+}
+
 .weather-temperature-container-daily{
     display: flex;
     flex-direction: column;
