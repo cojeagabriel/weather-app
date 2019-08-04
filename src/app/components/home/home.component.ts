@@ -32,9 +32,13 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   lastUpdate$: Observable<string>;
 
-  // @ViewChild("search", { static: false }) searchInput: ElementRef;
   @ViewChild(MatInput, { static: false }) searchInput: MatInput;
   searchFocus: boolean = false;
+
+  defaultImage = '/assets/images/background3-lazy.jpg';
+  image = '/assets/images/background3.jpg';
+
+  apiKey$: Observable<string>;
 
   constructor(
     private locationService: LocationService,
@@ -120,12 +124,10 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   searchBlur(){
     this.searchFocus = false;
-    console.log("blur", this.searchFocus);
   }
 
   searchInputFocus(){
     this.searchFocus = true;
-    console.log("focus", this.searchFocus);
   }
 
   ngOnDestroy(){
