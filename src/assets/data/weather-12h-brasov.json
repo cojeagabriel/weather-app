@@ -1,0 +1,195 @@
+[{
+    "DateTime": "2019-08-04T11:00:00+03:00",
+    "EpochDateTime": 1564905600,
+    "WeatherIcon": 4,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 16.6,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 22,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=11&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=11&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T12:00:00+03:00",
+    "EpochDateTime": 1564909200,
+    "WeatherIcon": 4,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 17.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 17,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=12&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=12&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T13:00:00+03:00",
+    "EpochDateTime": 1564912800,
+    "WeatherIcon": 4,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 17.9,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 22,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=13&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=13&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T14:00:00+03:00",
+    "EpochDateTime": 1564916400,
+    "WeatherIcon": 2,
+    "IconPhrase": "Mostly sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 18.6,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 34,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=14&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=14&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T15:00:00+03:00",
+    "EpochDateTime": 1564920000,
+    "WeatherIcon": 2,
+    "IconPhrase": "Mostly sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 19.4,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 34,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=15&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=15&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T16:00:00+03:00",
+    "EpochDateTime": 1564923600,
+    "WeatherIcon": 2,
+    "IconPhrase": "Mostly sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 18.8,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 37,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=16&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=16&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T17:00:00+03:00",
+    "EpochDateTime": 1564927200,
+    "WeatherIcon": 2,
+    "IconPhrase": "Mostly sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 18.5,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 47,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=17&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=17&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T18:00:00+03:00",
+    "EpochDateTime": 1564930800,
+    "WeatherIcon": 17,
+    "IconPhrase": "Partly sunny w/ t-storms",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Moderate",
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 16.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 51,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=18&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=18&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T19:00:00+03:00",
+    "EpochDateTime": 1564934400,
+    "WeatherIcon": 2,
+    "IconPhrase": "Mostly sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 16.4,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 47,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=19&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=19&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T20:00:00+03:00",
+    "EpochDateTime": 1564938000,
+    "WeatherIcon": 3,
+    "IconPhrase": "Partly sunny",
+    "HasPrecipitation": false,
+    "IsDaylight": true,
+    "Temperature": {
+      "Value": 15.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 20,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=20&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=20&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T21:00:00+03:00",
+    "EpochDateTime": 1564941600,
+    "WeatherIcon": 36,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 14.9,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 20,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=21&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=21&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2019-08-04T22:00:00+03:00",
+    "EpochDateTime": 1564945200,
+    "WeatherIcon": 34,
+    "IconPhrase": "Mostly clear",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 13.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "PrecipitationProbability": 20,
+    "MobileLink": "http://m.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=22&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ro/brasov/287345/hourly-weather-forecast/287345?day=1&hbhhour=22&unit=c&lang=en-us"
+  }
+]

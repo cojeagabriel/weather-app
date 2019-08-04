@@ -1,0 +1,151 @@
+[{
+    "Version": 1,
+    "Key": "101924",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Beijing",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "BJ",
+      "LocalizedName": "Beijing"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "107487",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Bogota",
+    "Country": {
+      "ID": "CO",
+      "LocalizedName": "Colombia"
+    },
+    "AdministrativeArea": {
+      "ID": "DC",
+      "LocalizedName": "Distrito Capital de Bogotá"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "178087",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Berlin",
+    "Country": {
+      "ID": "DE",
+      "LocalizedName": "Germany"
+    },
+    "AdministrativeArea": {
+      "ID": "BE",
+      "LocalizedName": "Berlin"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "207375",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Baghdad",
+    "Country": {
+      "ID": "IQ",
+      "LocalizedName": "Iraq"
+    },
+    "AdministrativeArea": {
+      "ID": "BG",
+      "LocalizedName": "Baghdad"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "318849",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Bangkok",
+    "Country": {
+      "ID": "TH",
+      "LocalizedName": "Thailand"
+    },
+    "AdministrativeArea": {
+      "ID": "10",
+      "LocalizedName": "Bangkok"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "204108",
+    "Type": "City",
+    "Rank": 11,
+    "LocalizedName": "Bengaluru",
+    "Country": {
+      "ID": "IN",
+      "LocalizedName": "India"
+    },
+    "AdministrativeArea": {
+      "ID": "KA",
+      "LocalizedName": "Karnataka"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "222888",
+    "Type": "City",
+    "Rank": 11,
+    "LocalizedName": "Busan",
+    "Country": {
+      "ID": "KR",
+      "LocalizedName": "South Korea"
+    },
+    "AdministrativeArea": {
+      "ID": "26",
+      "LocalizedName": "Busan"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "56913",
+    "Type": "City",
+    "Rank": 13,
+    "LocalizedName": "Bengbu",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "AH",
+      "LocalizedName": "Anhui"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "58493",
+    "Type": "City",
+    "Rank": 13,
+    "LocalizedName": "Bijie",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "GZ",
+      "LocalizedName": "Guizhou"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "61041",
+    "Type": "City",
+    "Rank": 13,
+    "LocalizedName": "Bazhong",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "SC",
+      "LocalizedName": "Sichuan"
+    }
+  }
+]

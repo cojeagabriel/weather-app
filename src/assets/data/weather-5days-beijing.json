@@ -1,0 +1,240 @@
+{
+  "Headline": {
+    "EffectiveDate": "2019-08-04T19:00:00+08:00",
+    "EffectiveEpochDate": 1564916400,
+    "Severity": 5,
+    "Text": "Air quality will be unhealthy for sensitive groups Monday morning through late Friday night",
+    "Category": "thunderstorm",
+    "EndDate": "2019-08-05T01:00:00+08:00",
+    "EndEpochDate": 1564938000,
+    "MobileLink": "http://m.accuweather.com/en/cn/beijing/101924/extended-weather-forecast/101924?unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?unit=c&lang=en-us"
+  },
+  "DailyForecasts": [{
+      "Date": "2019-08-04T07:00:00+08:00",
+      "EpochDate": 1564873200,
+      "Temperature": {
+        "Minimum": {
+          "Value": 23.0,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 29.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 15,
+        "IconPhrase": "Thunderstorms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "04"
+        }
+      },
+      "Night": {
+        "Icon": 15,
+        "IconPhrase": "Thunderstorms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Heavy",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "04"
+        }
+      },
+      "Sources": [
+        "AccuWeather",
+        "Huafeng"
+      ],
+      "MobileLink": "http://m.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=1&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=1&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2019-08-05T07:00:00+08:00",
+      "EpochDate": 1564959600,
+      "Temperature": {
+        "Minimum": {
+          "Value": 24.0,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 28.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 12,
+        "IconPhrase": "Showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "08"
+        }
+      },
+      "Night": {
+        "Icon": 15,
+        "IconPhrase": "Thunderstorms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "04"
+        }
+      },
+      "Sources": [
+        "AccuWeather",
+        "Huafeng"
+      ],
+      "MobileLink": "http://m.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=2&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=2&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2019-08-06T07:00:00+08:00",
+      "EpochDate": 1565046000,
+      "Temperature": {
+        "Minimum": {
+          "Value": 24.0,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 30.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 7,
+        "IconPhrase": "Cloudy",
+        "HasPrecipitation": false,
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "02"
+        }
+      },
+      "Night": {
+        "Icon": 15,
+        "IconPhrase": "Thunderstorms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "04"
+        }
+      },
+      "Sources": [
+        "AccuWeather",
+        "Huafeng"
+      ],
+      "MobileLink": "http://m.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=3&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=3&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2019-08-07T07:00:00+08:00",
+      "EpochDate": 1565132400,
+      "Temperature": {
+        "Minimum": {
+          "Value": 23.0,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 30.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 6,
+        "IconPhrase": "Mostly cloudy",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "04"
+        }
+      },
+      "Night": {
+        "Icon": 15,
+        "IconPhrase": "Thunderstorms",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Heavy",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "04"
+        }
+      },
+      "Sources": [
+        "AccuWeather",
+        "Huafeng"
+      ],
+      "MobileLink": "http://m.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=4&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=4&unit=c&lang=en-us"
+    },
+    {
+      "Date": "2019-08-08T07:00:00+08:00",
+      "EpochDate": 1565218800,
+      "Temperature": {
+        "Minimum": {
+          "Value": 23.0,
+          "Unit": "C",
+          "UnitType": 17
+        },
+        "Maximum": {
+          "Value": 29.0,
+          "Unit": "C",
+          "UnitType": 17
+        }
+      },
+      "Day": {
+        "Icon": 3,
+        "IconPhrase": "Partly sunny",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate",
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "04"
+        }
+      },
+      "Night": {
+        "Icon": 35,
+        "IconPhrase": "Partly cloudy",
+        "HasPrecipitation": false,
+        "LocalSource": {
+          "Id": 7,
+          "Name": "Huafeng",
+          "WeatherCode": "01"
+        }
+      },
+      "Sources": [
+        "AccuWeather",
+        "Huafeng"
+      ],
+      "MobileLink": "http://m.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=5&unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/cn/beijing/101924/daily-weather-forecast/101924?day=5&unit=c&lang=en-us"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+[{
+    "Version": 1,
+    "Key": "101924",
+    "Type": "City",
+    "Rank": 10,
+    "LocalizedName": "Beijing",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "BJ",
+      "LocalizedName": "Beijing"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2597569",
+    "Type": "City",
+    "Rank": 45,
+    "LocalizedName": "Beijinglu Subdistrict",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "XJ",
+      "LocalizedName": "Xinjiang"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2597741",
+    "Type": "City",
+    "Rank": 45,
+    "LocalizedName": "Beijingnanlu Subdistrict",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "XJ",
+      "LocalizedName": "Xinjiang"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2597649",
+    "Type": "City",
+    "Rank": 55,
+    "LocalizedName": "Beijing Economic And Technological Development Zone",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "BJ",
+      "LocalizedName": "Beijing"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2592804",
+    "Type": "City",
+    "Rank": 55,
+    "LocalizedName": "Beijing Township",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "GX",
+      "LocalizedName": "Guangxi"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "69881",
+    "Type": "City",
+    "Rank": 55,
+    "LocalizedName": "Beijinggang Town",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "HN",
+      "LocalizedName": "Hunan"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2584323",
+    "Type": "City",
+    "Rank": 55,
+    "LocalizedName": "Beijing Subdistrict",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "LN",
+      "LocalizedName": "Liaoning"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2597416",
+    "Type": "City",
+    "Rank": 55,
+    "LocalizedName": "Beijingxilu Subdistrict",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "NX",
+      "LocalizedName": "Ningxia"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "76101",
+    "Type": "City",
+    "Rank": 55,
+    "LocalizedName": "Beijing Township",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "SX",
+      "LocalizedName": "Shanxi"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2582539",
+    "Type": "City",
+    "Rank": 55,
+    "LocalizedName": "Beijinglu Subdistrict",
+    "Country": {
+      "ID": "CN",
+      "LocalizedName": "China"
+    },
+    "AdministrativeArea": {
+      "ID": "XJ",
+      "LocalizedName": "Xinjiang"
+    }
+  }
+]

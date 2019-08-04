@@ -1,0 +1,120 @@
+@import "../../../assets/scss/variables";
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 4px;
+    transition: all .15s ease-in-out;
+
+    &:hover{
+        background-color: $color-background;
+        border-color: rgba($color: $color-primary, $alpha: 0);
+    }
+}
+
+.weather-info{
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+}
+
+.weather-label{
+    // font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.weather-icons-container{
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+    img{
+        position: absolute;
+        
+        &:first-child{
+            right: 100%;
+            transform: translateX(50%);
+        }
+
+        &:nth-child(2) {
+          bottom: 0;
+          left: 100%;
+          transform: translateX(-50%);
+        }
+        // &:first-child{
+        //     left: 0;
+        // }
+
+        // &:nth-child(2) {
+        //   bottom: 0;
+        //   right: 0;
+        // }
+    }
+
+    svg{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        line{
+            stroke:rgb($color: $color-primary, $alpha: 0.16);
+            stroke-width: 1;
+        }
+    }
+}
+
+img{
+    width: 52px;
+    height: auto;
+}
+
+.temperature{
+    font-size: 48px;
+    padding-left: 8px;
+    font-weight: 400;
+}
+
+.humidity-container{
+    display: flex;
+    align-items: center;
+    opacity: 0.64;
+
+    svg{
+        height: 12px;
+        width: auto;
+        fill: white;
+        padding-bottom: 2px;
+        margin-right: 8px;
+    }
+}
+
+.weather-temperature-container{
+    display: flex;
+    align-items: center;
+}
+
+.weather-temperature-container-daily{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .weather-icons-container{
+        margin-bottom: 8px;
+    }
+}
+
+.temperature-minimum{
+    font-size: 16px;
+    color: rgba($color: $color-primary, $alpha: 0.64);
+}
+
+a{
+    text-decoration: none;
+}

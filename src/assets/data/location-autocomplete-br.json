@@ -1,0 +1,151 @@
+[{
+    "Version": 1,
+    "Key": "43348",
+    "Type": "City",
+    "Rank": 20,
+    "LocalizedName": "Brasília",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "DF",
+      "LocalizedName": "Distrito Federal"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "111167",
+    "Type": "City",
+    "Rank": 20,
+    "LocalizedName": "Brazzaville",
+    "Country": {
+      "ID": "CG",
+      "LocalizedName": "Republic of the Congo"
+    },
+    "AdministrativeArea": {
+      "ID": "BZV",
+      "LocalizedName": "Brazzaville"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "24741",
+    "Type": "City",
+    "Rank": 21,
+    "LocalizedName": "Brisbane",
+    "Country": {
+      "ID": "AU",
+      "LocalizedName": "Australia"
+    },
+    "AdministrativeArea": {
+      "ID": "QLD",
+      "LocalizedName": "Queensland"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "334651",
+    "Type": "City",
+    "Rank": 22,
+    "LocalizedName": "Brooklyn",
+    "Country": {
+      "ID": "US",
+      "LocalizedName": "United States"
+    },
+    "AdministrativeArea": {
+      "ID": "NY",
+      "LocalizedName": "New York"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "297345",
+    "Type": "City",
+    "Rank": 30,
+    "LocalizedName": "Bratislava",
+    "Country": {
+      "ID": "SK",
+      "LocalizedName": "Slovakia"
+    },
+    "AdministrativeArea": {
+      "ID": "BL",
+      "LocalizedName": "Bratislava"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "27497",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Brest",
+    "Country": {
+      "ID": "BY",
+      "LocalizedName": "Belarus"
+    },
+    "AdministrativeArea": {
+      "ID": "BR",
+      "LocalizedName": "Brest"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "123291",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Brno",
+    "Country": {
+      "ID": "CZ",
+      "LocalizedName": "Czechia"
+    },
+    "AdministrativeArea": {
+      "ID": "64",
+      "LocalizedName": "South Moravian"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "167950",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Bremen",
+    "Country": {
+      "ID": "DE",
+      "LocalizedName": "Germany"
+    },
+    "AdministrativeArea": {
+      "ID": "HB",
+      "LocalizedName": "Bremen"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "327328",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Bristol",
+    "Country": {
+      "ID": "GB",
+      "LocalizedName": "United Kingdom"
+    },
+    "AdministrativeArea": {
+      "ID": "BST",
+      "LocalizedName": "City of Bristol"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "287345",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Brasov",
+    "Country": {
+      "ID": "RO",
+      "LocalizedName": "Romania"
+    },
+    "AdministrativeArea": {
+      "ID": "BV",
+      "LocalizedName": "Brașov"
+    }
+  }
+]

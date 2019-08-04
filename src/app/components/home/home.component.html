@@ -1,0 +1,104 @@
+<main>
+  <div class="background">
+    <img src="/assets/images/background3.png" alt="">
+  </div>
+
+  <div class="header">
+    <span class="logo">HaceFrio</span>
+
+    <div class="actions">
+      <div class="search">
+        <mat-form-field class="example-full-width">
+          <input #search type="text" matInput [formControl]="city" [matAutocomplete]="auto" spellcheck="false">
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="selectOption($event.option.value)">
+            <mat-option *ngFor="let option of options | async" [value]="option.LocalizedName">
+              {{ option.LocalizedName + ', ' + option.Country.LocalizedName}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <button mat-icon-button aria-label="Example icon-button with a heart icon">
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+
+      <div class="toggle">
+        <mat-slide-toggle class="example-margin" [(ngModel)]="metricBoolean" (change)="toggleMetric()">
+          &#730;F
+        </mat-slide-toggle>
+      </div>
+    </div>
+  </div>
+
+  <div class="current-weather-info-container">
+    <h2 class="location-name mat-h1">{{ (location$ | async)?.LocalizedName }} <span class="location-country">{{ (location$ | async)?.Country.LocalizedName }}</span></h2>
+    <h3 class="date mat-caption">{{ ((currentWeather$ | async)?.LocalObservationDateTime | stringToDate) | uppercase }}</h3>
+
+    <div class="current-weather-container">
+      <div class="left-side">
+        <div class="main-info-container">
+          <img *ngIf="(currentWeather$ | async)?.WeatherIcon"
+            [src]='"https://developer.accuweather.com/sites/default/files/" + ((currentWeather$ | async)?.WeatherIcon > 9? (currentWeather$ | async)?.WeatherIcon.toString(): "0" + (currentWeather$ | async)?.WeatherIcon).toString() +"-s.png" || ""'
+            alt="">
+          <div class="weather-temperature-container">
+            <span
+              class="temperature current-weather-temperature">{{ (currentWeather$ | async)?.Temperature.Metric.Value | celsiusToFahrenheit:metric }}</span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="right-side">
+        <div class="weather-info-field">
+          <span class="weather-info-field-label">
+            Humidity
+          </span>
+          <span class="weather-info-field-value humidity-value">{{ (currentWeather$ | async)?.RelativeHumidity }}%</span>
+        </div>
+        <div class="weather-info-field">
+          <span class="weather-info-field-label">
+            Pressure
+          </span>
+          <span class="weather-info-field-value humidity-value">{{ (currentWeather$ | async)?.Pressure.Metric.Value }}</span>
+        </div>
+        <div class="weather-info-field">
+          <span class="weather-info-field-label">
+            Wind
+          </span>
+          <span class="weather-info-field-value humidity-value">{{ (currentWeather$ | async)?.Wind.Speed.Metric.Value }} <small class="mat-small">{{ (currentWeather$ | async)?.Wind.Speed.Metric.Unit }}</small></span>
+        </div>
+      </div>
+    </div>
+
+    <span class="weather-info-text mat-title">{{ (currentWeather$ | async)?.WeatherText }}</span>
+  </div>
+
+  <div class="weather-container">
+    <mat-tab-group>
+      <mat-tab label="Hourly">
+        <div class="container">
+          <div class="weather-list">
+            <app-weather-details *ngFor="let weather of (weather$ | async); trackBy: trackByFn" [weather]="weather"
+              [type]="'hour'" [metric]="metric">
+            </app-weather-details>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Daily">
+        <div class="container">
+          <div class="weather-list">
+            <app-weather-details *ngFor="let weather of (weatherByDays$ | async)?.DailyForecasts; trackBy: trackByFn"
+              [weather]="weather" [type]="'day'" [metric]="metric"></app-weather-details>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+
+  <div class="footer">
+    <span class="mat-caption">Latest update {{ lastUpdate$ | async }}</span>
+    <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="refresh()">
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </div>
+</main>
+
+

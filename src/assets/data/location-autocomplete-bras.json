@@ -1,0 +1,151 @@
+[{
+    "Version": 1,
+    "Key": "43348",
+    "Type": "City",
+    "Rank": 20,
+    "LocalizedName": "Brasília",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "DF",
+      "LocalizedName": "Distrito Federal"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "287345",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Brasov",
+    "Country": {
+      "ID": "RO",
+      "LocalizedName": "Romania"
+    },
+    "AdministrativeArea": {
+      "ID": "BV",
+      "LocalizedName": "Brașov"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2658043",
+    "Type": "City",
+    "Rank": 45,
+    "LocalizedName": "Brasilândia",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SP",
+      "LocalizedName": "São Paulo"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "27003",
+    "Type": "City",
+    "Rank": 53,
+    "LocalizedName": "Brasschaat",
+    "Country": {
+      "ID": "BE",
+      "LocalizedName": "Belgium"
+    },
+    "AdministrativeArea": {
+      "ID": "VAN",
+      "LocalizedName": "Antwerp"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "36926",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasiléia",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "AC",
+      "LocalizedName": "Acre"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2723906",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasil Novo",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "AP",
+      "LocalizedName": "Amapá"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2726570",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasil",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "BA",
+      "LocalizedName": "Bahia"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2728187",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasil",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "MG",
+      "LocalizedName": "Minas Gerais"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2305498",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasilândia de Minas",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "MG",
+      "LocalizedName": "Minas Gerais"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "2730397",
+    "Type": "City",
+    "Rank": 65,
+    "LocalizedName": "Brasil",
+    "Country": {
+      "ID": "BR",
+      "LocalizedName": "Brazil"
+    },
+    "AdministrativeArea": {
+      "ID": "SP",
+      "LocalizedName": "São Paulo"
+    }
+  }
+]
