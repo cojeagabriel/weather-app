@@ -168,6 +168,14 @@ main{
     .logo{
         font-family: $font-primary;
         font-weight: 700;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
     }
 
     .actions{
@@ -314,7 +322,7 @@ app-weather-details{
     }
 
     .logo {
-        display: none;
+        display: none !important;
     }
 
     .current-weather-container {
