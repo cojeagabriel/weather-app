@@ -10,9 +10,6 @@ import { environment } from 'src/environments/environment';
 })
 export class WeatherService {
 
-  metric = 'C';
-  metricChange$: Subject<string> = new Subject<null>();
-
   constructor(
     private http: HttpClient
   ) {
@@ -28,28 +25,31 @@ export class WeatherService {
   getWeather(weatherFilters: WeatherFilters): Observable<any> {
     switch (weatherFilters.Type) {
       case 'hourly':
+        // tslint:disable-next-line: max-line-length
         return this.http.get(`${environment.api}/forecasts/v1/hourly/12hour/${weatherFilters.CityKey}?apikey=${environment.apiKey}&metric=true`).pipe(
           map(weatherList => {
-            return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+            return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
           })
         );
         break;
-    
+
       case 'daily':
+        // tslint:disable-next-line: max-line-length
         return this.http.get(`${environment.api}/forecasts/v1/daily/5day/${weatherFilters.CityKey}?apikey=${environment.apiKey}&metric=true`);
         break;
-    
+
       default:
+        // tslint:disable-next-line: max-line-length
         return this.http.get(`${environment.api}/forecasts/v1/hourly/12hour/${weatherFilters.CityKey}?apikey=${environment.apiKey}&metric=true`).pipe(
           map(weatherList => {
-            return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+            return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
           })
         );
         break;
     }
   }
 
-  // getCurrentWeather(Key: string): Observable<any>{
+  // getCurrentWeather(Key: string): Observable<any> {
   //   switch (Key) {
   //     case '287430':
   //       return this.http.get('../../assets/data/weather-current-time-bucharest.json').pipe(
@@ -58,7 +58,7 @@ export class WeatherService {
   //         })
   //       ) as Observable<any>;
   //       break;
-    
+
   //     case '287345':
   //       return this.http.get('../../assets/data/weather-current-time-brasov.json').pipe(
   //         map(weather => {
@@ -66,7 +66,7 @@ export class WeatherService {
   //         })
   //       ) as Observable<any>;
   //       break;
-    
+
   //     case '101924':
   //       return this.http.get('../../assets/data/weather-current-time-beijing.json').pipe(
   //         map(weather => {
@@ -74,7 +74,7 @@ export class WeatherService {
   //         })
   //       ) as Observable<any>;
   //       break;
-    
+
   //     default:
   //       return this.http.get('../../assets/data/weather-current-time-bucharest.json').pipe(
   //         map(weather => {
@@ -83,27 +83,27 @@ export class WeatherService {
   //       ) as Observable<any>;
   //       break;
   //   }
-    
+
   // }
 
   // getWeather(weatherFilters: WeatherFilters): Observable<any> {
   //   switch (weatherFilters.CityKey) {
   //     case '287430':
   //       switch (weatherFilters.Type) {
-  //         case "hourly":
+  //         case 'hourly':
   //           return this.http.get('../../assets/data/weather-12h-bucharest.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
-  //         case "daily":
+  //         case 'daily':
   //           return (this.http.get('../../assets/data/weather-5days-bucharest.json') as Observable<Object>);
   //           break;
   //         default:
   //           return this.http.get('../../assets/data/weather-12h-bucharest.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
@@ -112,20 +112,20 @@ export class WeatherService {
 
   //     case '287345':
   //       switch (weatherFilters.Type) {
-  //         case "hourly":
+  //         case 'hourly':
   //           return this.http.get('../../assets/data/weather-12h-brasov.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
-  //         case "daily":
+  //         case 'daily':
   //           return (this.http.get('../../assets/data/weather-5days-brasov.json') as Observable<Object>);
   //           break;
   //         default:
   //           return this.http.get('../../assets/data/weather-12h-brasov.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
@@ -134,20 +134,20 @@ export class WeatherService {
 
   //     case '101924':
   //       switch (weatherFilters.Type) {
-  //         case "hourly":
+  //         case 'hourly':
   //           return this.http.get('../../assets/data/weather-12h-beijing.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
-  //         case "daily":
+  //         case 'daily':
   //           return (this.http.get('../../assets/data/weather-5days-beijing.json') as Observable<Object>);
   //           break;
   //         default:
   //           return this.http.get('../../assets/data/weather-12h-beijing.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
@@ -156,20 +156,20 @@ export class WeatherService {
 
   //     default:
   //       switch (weatherFilters.Type) {
-  //         case "hourly":
+  //         case 'hourly':
   //           return this.http.get('../../assets/data/weather-12h-bucharest.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
-  //         case "daily":
+  //         case 'daily':
   //           return (this.http.get('../../assets/data/weather-5days-bucharest.json') as Observable<Object>);
   //           break;
   //         default:
   //           return this.http.get('../../assets/data/weather-12h-bucharest.json').pipe(
   //             map(weatherList => {
-  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 == 0).slice(0, 5);
+  //               return (weatherList as Array<any>).filter((weather, index) => index % 2 === 0).slice(0, 5);
   //             })
   //           ) as Observable<any>;
   //           break;
@@ -177,21 +177,5 @@ export class WeatherService {
   //       break;
   //   }
   // }
-
-  getMetric(): Observable<string> {
-    return this.metricChange$.pipe(
-      startWith(this.metric)
-    );
-  }
-
-  toggleMetric() {
-    if (this.metric == 'C') {
-      this.metric = 'F';
-      this.metricChange$.next(this.metric);
-    } else {
-      this.metric = 'C';
-      this.metricChange$.next(this.metric);
-    }
-  }
 
 }

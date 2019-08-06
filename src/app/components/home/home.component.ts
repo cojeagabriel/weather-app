@@ -1,12 +1,12 @@
 import { WeatherService } from './../../services/weather.service';
 import { LocationService } from './../../services/location.service';
-import { Component, OnInit, OnDestroy, ViewChild, ElementRef, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import { shareReplay, switchMap, map, filter, startWith, take, tap, last, withLatestFrom, first } from 'rxjs/operators';
+import { shareReplay, switchMap, map, startWith, take } from 'rxjs/operators';
 import * as moment from 'moment';
 import { FormControl } from '@angular/forms';
 import { untilDestroyed } from 'ngx-take-until-destroy';
-import { MatInput } from '@angular/material'
+import { MatInput } from '@angular/material';
 
 @Component({
   selector: 'app-home',
@@ -20,20 +20,19 @@ export class HomeComponent implements OnInit, OnDestroy {
   weather$: Observable<any>;
   weatherByDays$: Observable<any>;
 
-  currentWeather$: Observable<any>
+  currentWeather$: Observable<any>;
 
   city = new FormControl();
   options: Observable<string[]>;
 
   generateWeather: Subject<string> = new Subject<null>();
 
-  metric: string = 'C';
-  metric$: Observable<string>;
+  metric: string;
 
   lastUpdate$: Observable<string>;
 
   @ViewChild(MatInput, { static: false }) searchInput: MatInput;
-  searchFocus: boolean = false;
+  searchFocus = false;
 
   defaultImage = '/assets/images/background3-lazy.jpg';
   image = '/assets/images/background3.jpg';
@@ -49,6 +48,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit() {
 
     this.city.setValue('');
+    this.metric = 'C';
 
     this.location$ = this.generateWeather.pipe(
       startWith('bucharest'),
@@ -58,8 +58,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       }),
       shareReplay(1)
     );
-
-    this.location$.subscribe();
 
     this.weather$ = this.location$.pipe(
       switchMap(location => this.weatherService.getWeather({ CityKey: location.Key, Type: 'hourly' })),
@@ -80,41 +78,37 @@ export class HomeComponent implements OnInit, OnDestroy {
       shareReplay(1)
     );
 
-    this.metric$ = this.weatherService.getMetric();
-
     this.lastUpdate$ = this.currentWeather$.pipe(
       map(value => moment().format('hh:mm:ss'))
-    )
+    );
 
   }
 
-  selectOption(value: string){
+  selectOption(value: string): void {
     this.generateWeather.next(value);
   }
 
-  trackByFn(index){
+  trackByFn(index: any) {
     return index;
   }
 
-  toggleMetric(){
-    this.weatherService.toggleMetric();
-    this.weatherService.getMetric().pipe(
-      take(1),
-      untilDestroyed(this)
-    ).subscribe(metric => {
-      this.metric = metric;
-    });
+  toggleMetric(): void {
+    if (this.metric === 'C') {
+      this.metric = 'F';
+    } else {
+      this.metric = 'C';
+    }
   }
 
-  refresh(){
+  refresh(): void {
     this.generateWeather.next(this.location);
   }
 
   searchClick() {
-    if(this.city.value != ''){
+    if (this.city.value !== '') {
       this.city.setValue('');
     }
-    if(this.searchFocus == false){
+    if (this.searchFocus === false) {
       this.changeDetector.detectChanges();
       setTimeout(() => {
         this.searchInput.focus();
@@ -122,16 +116,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
-  searchBlur(){
+  searchBlur(): void {
     this.searchFocus = false;
   }
 
-  searchInputFocus(){
+  searchInputFocus(): void {
     this.searchFocus = true;
   }
 
-  ngOnDestroy(){
-  }
+  ngOnDestroy(): void {
 
+  }
 
 }
